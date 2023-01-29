@@ -18,6 +18,7 @@ const port = 3000
 // use to serve resource to clients
 app.use(express.static(__dirname + '\\public'));
 app.use('/file',express.static(__dirname + '\\node_modules'));
+app.use('/js',express.static(__dirname + '\\public\\js'));
 console.log(__dirname + '\\node_modules\\three\\build')
 
 
